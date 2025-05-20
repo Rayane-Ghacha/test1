@@ -1,0 +1,96 @@
+site_name: My Docs
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    # - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+plugins:
+  - search
+  - tags
+  - blog
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Docs: 
+      - Docs: docsfile/docs.md
+  - Models:
+      - Models: modelsfile/models.md
+      - Parts:
+          - robot-base: modelsfile/robotbase.md
+          - second-layer: modelsfile/secondlayer.md
+          - third-layer: modelsfile/thirdlayer.md
+          - short-shaft: modelsfile/shortshaft.md
+          - long-shaft: modelsfile/longshaft.md
+          - front-shaft: modelsfile/frontshaft.md
+          - Berring-Support-Front-Bottom: modelsfile/BerringSupportFrontBottom.md
+          - Berring-Support-Front-Top: modelsfile/BerringSupportFrontTop.md
+          - Steering-Rack: modelsfile/SteeringRack.md
+          - Steering-Conector: modelsfile/SteeringConector.md
+          - Axle-Clamp: modelsfile/AxleClamp.md
+          - Big-Gear: modelsfile/BigGear.md
+          - Gear: modelsfile/gear.md
+          - Front-Support-Camera: modelsfile/FrontSupportCamera.md
+          - Back-Support-Camera: modelsfile/BackSupportCamera.md
+          - Conector-Support-Camera: modelsfile/ConectorSupportCamera.md
+  - Other:
+      - BOM: otherfile/BOM.md
+      - Power-System: otherfile/PowerSystem.md
+      - Setting-Up-Your-Raspberry-Pi: otherfile/SettingUpYourRaspberryPi.md
+      - Sensing-Units: otherfile/SensingUnits.md
+      - Steering-System: otherfile/SteeringSystem.md
+      - Strategy: otherfile/Strategy.md
+  - Schemes:
+      - Schemes: schemesfile/schemes.md
+  - Src:
+      - Source-code: srcfile/src.md
+      - arduino-functions: srcfile/arduinofunctions.md
+      - Commands: srcfile/Commands.md
+      - Dashboard: srcfile/Dashboard.md
+      - Raspi-Commands: srcfile/RaspiCommands.md
+      - Test: srcfile/Test.md
+      - Ubuntu-Commands: srcfile/UbuntuCommands.md
+  - t-photos:
+      - t-photos: t-photos/t-photos.md
+  - v-photos:
+      - v-photos: v-photos/v-photos.md
+  - Blog:
+      - Blog: blog/index.md
